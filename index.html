@@ -14,7 +14,16 @@
 
   <body>
     <h1>Multimodal Signals Visualization</h1>
-    <p id="status">Loading model...</p>
+    <p>This demo uses three different signals:</p>
+    <ul>
+        <li>The position of your nose (captured by your webcam)</li>
+        <li>The volume of your voice (captured by your microphone)</li>
+        <li>A recording of a Emotiv session (EDF file)</li>
+    </ul>
+    <p>If you move your nose to the left the amount of purple flares will increase.
+        If you increase your voice, a green halo will appear.
+        The background changes to the values of the measurements in the channel 0 of the EEG.</p>
+    <p id="status">Wait for the model to download...</p>
     <script src="sketch.js"></script>
   </body>
 </html>
